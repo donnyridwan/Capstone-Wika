@@ -46,7 +46,7 @@
                 <form action="{{ route('landing.scrape') }}" method="post" class="flex py-10 px-8 bg-white rounded-3xl gap-10 justify-between flex-wrap">
                     @csrf
                     <div class="flex flex-col min-w-[180px]">
-                        <label for="departure" class="ml-1">Keberangkatan</label>
+                        <label for="depature" class="ml-1">Keberangkatan</label>
                         <select class="cursor-pointer font-bold text-2xl" aria-label="Default select example" id="departure" name="departure">
                             <option selected>Semarang</option>
                             <option value="&airlines=GA">Jakarta</option>
@@ -145,9 +145,7 @@
             </div>
         </footer>
 
-        
     </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

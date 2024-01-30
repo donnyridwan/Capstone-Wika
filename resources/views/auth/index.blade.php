@@ -3,11 +3,11 @@
 @extends('auth.layout')
 
 @section('content')
-    <form method="POST" action="{{ route('login.post') }}" class="flex flex-col items-center w-[480px] -mt-24">
+    <form method="POST" action="{{ route('login.post') }}" class="flex flex-col items-center w-full px-8 md:w-[480px] -mt-24">
         {{-- action="{{ route('login') }}" --}}
         @csrf
         <p class="font-bold text-5xl mb-6">{{ __('Login') }}</p>
-        <p class="text-lg mb-8">Pastikan data yang anda masukan benar</p>
+        <p class="text-lg mb-8 text-center">Pastikan data yang anda masukan benar</p>
         <div class="mb-6 flex flex-col w-full">
             <label for="email" class="">{{ __('Email*') }}</label>
             <input id="email" type="email" class="border border-black rounded-lg py-2 px-4" name="email" value="{{ old('email') }}" required autofocus>

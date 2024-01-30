@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="app" class="h-[100svh] w-[100svw] flex flex-col items-center justify-start">
-        <div class="w-full px-16 py-5">
+        <div class="w-full px-4 md:px-16 py-5">
             <p class="font-bold text-2xl">WikaTours</p>
         </div>
         <div class="flex items-center justify-center grow">
