@@ -28,9 +28,11 @@
                 <button class="mr-6">
                     <img src="{{ asset('assets/shopping-cart.svg') }}" alt="" class="h-6 w-6">
                 </button>
-                <button class=" bg-themeBlue text-white py-2 px-6">
-                    Logout
-                </button>
+                <form action="{{ route('logout') }}">
+                    <button class="bg-themeBlue text-white py-2 px-6" type="submit">
+                        Logout
+                    </button>
+                </form>
             </div>
         </div>
 
@@ -47,19 +49,19 @@
                     @csrf
                     <div class="flex flex-col min-w-[180px]">
                         <label for="depature" class="ml-1">Keberangkatan</label>
-                        <select class="cursor-pointer font-bold text-2xl" aria-label="Default select example" id="departure" name="departure">
-                            <option selected>Semarang</option>
-                            <option value="&airlines=GA">Jakarta</option>
-                            <option value="user">Ambon</option>
+                        <select class="cursor-pointer font-bold text-2xl" aria-label="Default select example" id="depature" name="depature">
+                            <option selected value="Semarang">Semarang</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Ambon">Ambon</option>
                         </select>
                     </div>
         
                     <div class="flex flex-col min-w-[180px]">
                         <label for="destination" class="ml-1">Tujuan</label>
                         <select class="cursor-pointer font-bold text-2xl" aria-label="Default select example" id="destination" name="destination">
-                            <option selected>Semarang</option>
-                            <option value="&airlines=GA">Jakarta</option>
-                            <option value="user">Ambon</option>
+                            <option selected value="Semarang">Semarang</option>
+                            <option value="Jakarta">Jakarta</option>
+                            <option value="Ambon">Ambon</option>
                         </select>
                     </div>
 

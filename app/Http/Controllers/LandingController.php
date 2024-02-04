@@ -98,6 +98,7 @@ class LandingController extends Controller
                 }
 
                 $request->session()->put('response', $response);
+                // return view('landing.result')->with('response', $response);
             } else {
                 echo 'Format response tidak sesuai.';
             }
